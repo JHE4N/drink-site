@@ -20,6 +20,18 @@ nav{
     width: 100%;
     overflow: hidden;
     position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:auto ;
+}
+label{
+    color: white;
+    cursor: pointer;
+    font-size: 35px;
+}
+#burger{
+    display: none;
 }
 nav ul li{
     display: inline;
@@ -48,30 +60,16 @@ input{
 .gamb{
     height: 101px;
 }
-.fundo-carrosel, .gamb{
-    background-color: rgba(128, 128, 128, 0.37);
+#quem_somos{
+    display: block;
+    justify-content: center;
+    background-color: rebeccapurple;
+    padding: 30px;
 }
-.carrossel{
-    display: flex;
-    box-shadow: 2px 2px 4px black;
-    overflow: hidden;
-    height: 500px;
-    width: 1000px;
-    margin-left: 22%;
-}
-.container{
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);
-}
-.carrosel-img{
-    height: 500px;
-    width: 1000px;
-    object-fit: cover;
-}
-
 /*Produtos*/
 .produtos{
+    display: flex;
+    flex-direction: column;
     background-color: aqua;
     min-width: 300px;
     max-width: 1500px;
@@ -82,10 +80,17 @@ input{
     margin-top: 10px;
     width: 300px;
     height: 300px;
+    cursor: pointer;
 }
 .produto{
     width: 400px;
     height: 100%;
+    background-color: blue;
+    margin: 10px;   
+}
+div button{
+    background-color: aquamarine;
+    cursor: pointer;
 }
 footer{
     width: 100%;

@@ -7,6 +7,10 @@
     <title>CERRAPAN DRINKS</title>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>  
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'> <!--Facebook-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'> <!--Instagram-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'> <!--Twitter-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'> <!--Whatsapp-->
     <style>
         *{
             text-decoration: none;
@@ -65,14 +69,131 @@
             height: 101px;
         }
         section{
-            background-color: brown;
+            background-color: white;
             height: 1000px;
         }
-        footer{
+        section div{
+            background-color: white;
             width: 100%;
+            display: flex;
+            padding: 50px;
+            margin-left: 120px;
+        }
+        div img{
+            height: 600px;
+            width: 600px;
+        }
+        .info_produto{
+            background-color: white;
+            display: inline-block;
+            margin-left: 0px;
+            padding: 0px;
+        }
+        .info_produto h1{
+            font-size: 32px;
+        }
+        .compra_produto{
+            margin-left: 0px;
+            padding: 0px;
+            margin-top: 10px;
+            font-size: 20px;
+            align-items: center;
+        }
+        /*Input de qtd*/
+        .qtd{
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-size: 20px;
+            margin: 40px;
+        }
+        /*botao compar*/
+        .btn_comprar{
+            width: 100px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.664);
+            cursor: pointer;
+            color: whitesmoke;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        /*Input de cep*/
+        .cep{
+            padding: 5px;
+            width: 180px;
+            height: 50px;
+            font-size: 18px;
+        }
+        /*botão calcular cep*/
+        .btn_cep{
+            width: 140px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.664);
+            cursor: pointer;
+            color: whitesmoke;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .preco_produto{
+            font-size: 30px;
+        }
+        .descrição{
+            margin-left: 0px;
+            margin-left: 0px;
+            padding: 0px;
+            margin-top: 40px;
+            width: 700px;
+            display: grid;
+        }
+        .descrição h1{
+            font-size: 24px;
+        }
+        .descrição p{
+            font-size: 20px;
+            margin-top: 2px;
+            text-align: justify;
+        }
+        table{
+            margin-top: 50px;
+            border: 1px solid black;
+            width: 500px;
             height: 100px;
-            background-color: cadetblue;
-
+            table-layout: fixed;
+            font-size: 20px;
+        }
+        table td{
+            border: 0px;
+        }
+        .tr{
+            background-color: #ebebeb;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            height: 200px;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 30px;
+            align-items: center;
+        }
+        footer div{
+            display: inline-block;
+            margin-left: 100px;
+        }
+        footer div div span{
+            cursor: pointer;
+            font-size: 18px;
+        }
+        footer div span i{
+            font-size: 30px;
+            margin: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -99,8 +220,76 @@
     </div>
     <section>
         <div>
-            oaad
+            <img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt="">
+
+            <!--Div para informações do produto-->
+            <div class="info_produto">
+                <h1>Wisky Jack Daniels</h1>
+                <div class="compra_produto">   
+                    <span>⭐</span>
+                    <span>⭐</span>   
+                    <span>⭐</span>   
+                    <span>⭐</span>
+                </div>
+                <div class="compra_produto"> 
+                    <span class="preco_produto">R$ 99,90</span>
+                </div>
+                <div class="compra_produto">
+                    <input type="number" name="" id="" placeholder="qtd" min="1" max="100" class="qtd">
+                    <button class="btn_comprar"> COMPRAR</button>
+                </div>
+                <div class="compra_produto">
+                <span><input type="text" name="" id="" placeholder="digite seu cep" class="cep"> <button class="btn_cep">CALCULAR FRETE</button></span>
+                </div>
+                <div class="descrição">
+                    <h1>Descrição</h1>
+                    <p>
+                        &nbsp O Jack Daniel's Tennessee Whiskey é feito com o melhor milho, centeio e malte de cevada. Seu caráter diferenciado é o resultado da fermentação natural, da cuidadosa destilação e do uso da água livre de ferro da Destilaria que nasce na Cave Spring e corre à uma temperatura constante de 13°C    
+                    </p>
+                </div>
+                <br>
+                <table border="4">
+                    <tr>
+                        <td>Volume</td>
+                        <td>1000 ml</td>
+                    </tr>
+                    <tr class="tr">
+                        <td>Garrafa</td>
+                        <td>Vidro</td>
+                    </tr>
+                    <tr>
+                        <td>Concentração de Alcool </td>
+                        <td>40%</td>
+                    </tr>
+                    <tr class="tr">
+                        <td>Importado</td>
+                        <td>Sim</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </section>
+    <footer>
+        <div>
+            <div>
+                <h1>Fale conosco</h1>
+                <span>suporte@email.com</span> 
+                <br>
+                <span>(67)9999-9999</span>
+            </div>
+            <div>
+                <h1>Ajuda</h1>
+                <span>Termos e condições</span>
+                <br>
+                <span>Política de privacidade</span>
+            </div>
+        </div>
+        <div>
+            <span><i class="fi fi-brands-facebook"></i></span>
+            <span><i class="fi fi-brands-instagram"></i></span>
+            <span><i class="fi fi-brands-twitter"></i></span>
+            <span><i class="fi fi-brands-whatsapp"></i></span> 
+        </div>
+    </footer>
 </body>
 </html>

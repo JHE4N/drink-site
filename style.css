@@ -66,24 +66,38 @@ input{
 
 /*Gambiarra básica pro conteúdo ficar em baixo do menu*/
 .gamb{
-    height: 101px;
+    height: 100px;
 }
-
-#quem_somos{
-    display: block;
-    justify-content: center;
-    background-color: rebeccapurple;
-    padding: 30px;
+section{
+   width: 100%;
+   background-color: #ebebeb;
+   padding: 150px;
+}
+.filtrar_produtos{
+    display: inline;
+    margin-left: 90px;
+    margin-bottom: 10px;
+}
+.filtrar_produtos select{
+    text-align: center;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 16px;    
+    margin: 10px;
 }
 /*Produtos*/
 .produtos{
     display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /*display: flex;
     flex-direction: column;
     background-color: aqua;
     min-width: 300px;
     max-width: 1500px;
     margin: auto;
-    padding:10px;
+    padding:10px;*/
 }
 .produto img{
     margin-top: 10px;
@@ -94,20 +108,62 @@ input{
 .produto{
     width: 400px;
     height: 100%;
-    background-color: blue;
-    margin: 10px;   
+    background-color: white;
+    margin: 5px;
+    cursor: pointer;
+    margin-bottom: 40px
 }
-
+/*nome do produto*/
+div h3{
+    font-size: 24px;
+}
+/*preço do produto*/
+div span{
+    font-size: 32px;
+}
 /*Botão comprar*/
 div button{
-    background-color: aquamarine;
     cursor: pointer;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.664);
+}
+div button a{
+    color: whitesmoke;
+}
+#quem_somos{
+    display: flexbox;
+    justify-content: center;
+    background-color: white;
+    padding: 30px;
 }
 
 /*Rodapé*/
 footer{
+    background-color: black;
+    color: white;
+    height: 200px;
     width: 100%;
-    height: 100px;
-    background-color: cadetblue;
-
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+    align-items: center;
+    margin-bottom: 0px;
+}
+footer div{
+    display: inline-block;
+    margin-left: 100px;
+}
+footer div div span{
+    cursor: pointer;
+    font-size: 18px;
+}
+footer div span i{
+    font-size: 30px;
+    margin: 5px;
+    cursor: pointer;
 }

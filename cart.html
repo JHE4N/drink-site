@@ -70,19 +70,15 @@
         .gamb{
             height: 101px;
         }
-        .info_produto{
+        .tabela{
+            background-color: rebeccapurple;
+            margin: 10px;
             display: flex;
-            padding: 10px;
-            margin: 10;
         }
-        .info_produto span{
-            margin: 20px;
-        }
-        .produto input{
-            width: 40px;
-            height: 40px;
-            text-align: center;
-            font-size: 16px;
+        table{
+            border: 10px solid black;
+            margin: 40px;
+            width: 1000px;
         }
         footer{
             background-color: black;
@@ -139,18 +135,27 @@
     <div class="gamb">
     </div>
     <section>
-        <div class="info_produto">
-            <span>Produto</span>
-            <span>Quantidade</span>
-            <span>Preço</span>
-        </div>
-        <hr>
-        <div class="produto">
-            <img src="" alt="">
-            <span>Wisky Jack Daniels</span>
-            <input type="number">
-            <span>R$ 99,90</span>
-            <span><i class="fi fi-rr-trash"></i></span>
+        <div class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Produto</td>
+                        <td>Quantidade</td>
+                        <td>Preço</td>
+                    </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                    <div>
+                        <td>img(100x100)</td>
+                        <td>Descrição do produto</td>
+                        <td>-<input type="number" name="" id="">+</td>
+                        <td>R$ 99,90</td>
+                        <td>X</td>
+                    </div>
+                   </tr>
+                </tbody>
+            </table>
         </div>
     </section>
     <footer>

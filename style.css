@@ -153,6 +153,7 @@ footer{
     padding: 30px;
     align-items: center;
     margin-bottom: 0px;
+    bottom: 0px;
 }
 footer div{
     display: inline-block;

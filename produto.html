@@ -70,23 +70,26 @@
         }
         section{
             width: 100%;
-            margin-left: 10%;
+            padding: 5px;
         }
         section div{
             background-color: white;
             width: 500px;
             display: flex;
             padding: 50px;
-            /*margin-left: 120px; -Isso deixa o conteúdo mais largo que o rodapé*/
+        }
+        .container_produto{
+            justify-content: center;
+            width: 100%;
+            padding: 15px;
         }
         div img{
             height: 600px;
             width: 600px;
         }
         .info_produto{
-            background-color: white;
             display: inline-block;
-            margin-left: 0px;
+            margin-left: 5px;
             padding: 0px;
         }
         .info_produto h1{
@@ -98,6 +101,7 @@
             margin-top: 10px;
             font-size: 20px;
             align-items: center;
+            display: flex;
         }
         /*Input de qtd*/
         .qtd{
@@ -141,21 +145,22 @@
         .preco_produto{
             font-size: 30px;
         }
-        .descrição{
+        .descricao{
             margin-left: 0px;
             margin-left: 0px;
-            padding: 0px;
+            padding: 5px;
             margin-top: 40px;
-            width: 700px;
+            width: 100%;
             display: grid;
         }
-        .descrição h1{
+        .descricao h1{
             font-size: 24px;
         }
-        .descrição p{
+        .descricao p{
             font-size: 20px;
             margin-top: 2px;
             text-align: justify;
+            padding: 5px;
         }
         table{
             margin-top: 50px;
@@ -171,17 +176,81 @@
         .tr{
             background-color: #ebebeb;
         }
-        .produtos_similares{
-            background-color: white;
-            margin-left: 0px;
-            display: inline;
+        .reviews_and_more{
+            width: 100%;
+            display: block;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        /*Avaliações*/
+        .reviews{
+            width: 55%;
+            padding: 5px;
+            display: block;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .reviews section{
+            width: 100%;
+            display: flex;
+            margin: 0px;
             padding: 0px;
-            background-color: green;  
+        }
+        .nota{
+            margin: 5px;
+            padding: 0px;
+            display: block;
+            width: 25%;
+        }
+        .nota .stars{
+            padding: 0px;
+            width: 100%;
+        }
+        .barra_progresso_stars{
+            padding: 0px;
+            margin: 5px;
+            display: block;
+        }
+        .btn_review{ 
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+        .btn_review button{
+            width: 33.33%;
+            height: 50px;
+            font-size: 16px;
+        }
+        .reviews_list{
+            width: 100%;
+            padding: 15px;
+            display: block;
+        }
+        .reviews_list .stars_review{
+            padding: 0px;
+        }
+        .reviews_list .text_review{
+            margin-top: 5px;
+            padding: 0px;
+            display: block;
+        }
+        .reviews_list .text_review p{
+            margin-top: 5px;
+        }
+        /*Produtos similares*/
+        .produtos_similares{
+            width: 50%;
+            margin-left: 0px;
+            display: block;
+            padding: 0px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .produtos_similares h1{
             width: 100%;
         }
-        /*Produtos*/
         .produtos{
             padding: 0px;
         }
@@ -208,6 +277,7 @@
             padding: 0px;
         }
 
+        /*Rodapé*/
         footer{
             background-color: black;
             color: white;
@@ -235,7 +305,7 @@
             cursor: pointer;
         }
         @media(max-width: 1352px){
-            .descrição{
+            .descricao{
                 width: 500px;
             }
         }
@@ -263,7 +333,7 @@
     <div class="gamb">
     </div>
     <section>
-        <div>
+        <div class="container_produto">
             <img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt="">
 
             <!--Div para informações do produto-->
@@ -285,7 +355,7 @@
                 <div class="compra_produto">
                 <span><input type="text" name="" id="" placeholder="digite seu cep" class="cep"> <button class="btn_cep">CALCULAR FRETE</button></span>
                 </div>
-                <div class="descrição">
+                <div class="descricao">
                     <h1>Descrição</h1>
                     <p>
                         &nbsp O Jack Daniel's Tennessee Whiskey é feito com o melhor milho, centeio e malte de cevada. Seu caráter diferenciado é o resultado da fermentação natural, da cuidadosa destilação e do uso da água livre de ferro da Destilaria que nasce na Cave Spring e corre à uma temperatura constante de 13°C    
@@ -312,33 +382,70 @@
                 </table>
             </div>
         </div>
-        <div class="avaliacaoes">
-            <h1>Avaliações</h1>
-        </div>
-        <div class="produtos_similares">
-            <h1>Produtos similares</h1>
-            <div class="produtos">    <!--div para todos os produtos(formada por várias Divs da classe produto)-->
-                <div class="produto"> <!--div para cada produto-->
-                    <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
-                    <div class="div_info_produto">
-                        <h3>Whisky Jack Daniels</h3>
-                        <span>R$99,90</span> 
+        <div class="reviews_and_more">
+            <div class="reviews">
+                <h1>Avaliações</h1>
+                <section>
+                    <div class="nota">
+                        <span>4.5</span>
+                        <div class="stars">   
+                            <span>⭐</span>
+                            <span>⭐</span>   
+                            <span>⭐</span>   
+                            <span>⭐</span>
+                        </div>
+                    </div>
+                    <div class="barra_progresso_stars">
+                        <span>Barra de progesso 1</span><br>
+                        <span>Barra de progesso 2</span><br>
+                        <span>Barra de progesso 3</span><br>
+                        <span>Barra de progesso 4</span><br>
+                        <span>Barra de progesso 5</span>
+                    </div>
+                </section>
+                <div class="btn_review">
+                    <button>Todas</button>
+                    <button>Positivas</button>
+                    <button>Negativas</button>
+                </div>
+                <div class="reviews_list">
+                    <div class="stars_review">
+                        <span>⭐</span>
+                        <span>⭐</span>   
+                        <span>⭐</span>   
+                        <span>⭐</span>
+                    </div>
+                    <div class="text_review">
+                        <h4>Bom</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit cupiditate odio. Blanditiis ad reiciendis quos non consequuntur eos placeat necessitatibus porro quis enim, odit, tempora eveniet earum rerum magnam.</p>
                     </div>
                 </div>
-                <div class="produto"> <!--div para cada produto-->
-                    <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
-                    <div class="div_info_produto">
-                        <h3>Whisky Jack Daniels</h3>
-                        <span>R$99,90</span>
-                        <br>
+            </div>
+            <div class="produtos_similares">
+                <h1>Produtos similares</h1>
+                <div class="produtos">    <!--div para todos os produtos(formada por várias Divs da classe produto)-->
+                    <div class="produto"> <!--div para cada produto-->
+                        <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
+                        <div class="div_info_produto">
+                            <h3>Whisky Jack Daniels</h3>
+                            <span>R$99,90</span> 
+                        </div>
                     </div>
-                </div>
-                <div class="produto"> <!--div para cada produto-->
-                    <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
-                    <div class="div_info_produto">
-                        <h3>Whisky Jack Daniels</h3>
-                        <span>R$99,90</span>
-                        <br>
+                    <div class="produto"> <!--div para cada produto-->
+                        <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
+                        <div class="div_info_produto">
+                            <h3>Whisky Jack Daniels</h3>
+                            <span>R$99,90</span>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="produto"> <!--div para cada produto-->
+                        <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
+                        <div class="div_info_produto">
+                            <h3>Whisky Jack Daniels</h3>
+                            <span>R$99,90</span>
+                            <br>
+                        </div>
                     </div>
                 </div>
             </div>

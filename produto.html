@@ -70,6 +70,7 @@
         }
         section{
             width: 100%;
+            margin-left: 10%;
         }
         section div{
             background-color: white;
@@ -170,6 +171,43 @@
         .tr{
             background-color: #ebebeb;
         }
+        .produtos_similares{
+            background-color: white;
+            margin-left: 0px;
+            display: inline;
+            padding: 0px;
+            background-color: green;  
+        }
+        .produtos_similares h1{
+            width: 100%;
+        }
+        /*Produtos*/
+        .produtos{
+            padding: 0px;
+        }
+        .produto img{
+            width: 224px;
+            height: 224px;
+            cursor: pointer;
+        }
+        .produto{
+            background-color: gray;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 10px;
+            padding: 2px;
+        }
+        .div_info_produto{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+            background-color: rebeccapurple;
+            width: 224px;
+            padding: 0px;
+        }
+
         footer{
             background-color: black;
             color: white;
@@ -230,7 +268,7 @@
 
             <!--Div para informações do produto-->
             <div class="info_produto">
-                <h1>Wisky Jack Daniels</h1>
+                <h1>Whisky Jack Daniels</h1>
                 <div class="compra_produto">   
                     <span>⭐</span>
                     <span>⭐</span>   
@@ -272,6 +310,37 @@
                         <td>Sim</td>
                     </tr>
                 </table>
+            </div>
+        </div>
+        <div class="avaliacaoes">
+            <h1>Avaliações</h1>
+        </div>
+        <div class="produtos_similares">
+            <h1>Produtos similares</h1>
+            <div class="produtos">    <!--div para todos os produtos(formada por várias Divs da classe produto)-->
+                <div class="produto"> <!--div para cada produto-->
+                    <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
+                    <div class="div_info_produto">
+                        <h3>Whisky Jack Daniels</h3>
+                        <span>R$99,90</span> 
+                    </div>
+                </div>
+                <div class="produto"> <!--div para cada produto-->
+                    <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
+                    <div class="div_info_produto">
+                        <h3>Whisky Jack Daniels</h3>
+                        <span>R$99,90</span>
+                        <br>
+                    </div>
+                </div>
+                <div class="produto"> <!--div para cada produto-->
+                    <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
+                    <div class="div_info_produto">
+                        <h3>Whisky Jack Daniels</h3>
+                        <span>R$99,90</span>
+                        <br>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

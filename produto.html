@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CERRAPAN DRINKS</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>  
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'> <!--Facebook-->
@@ -28,154 +30,133 @@
             min-height: 100vh;
 
         }
+
+
+        /*Menu*/
         nav{
-            background-color: black;
+            background-color: white;
             height: 100px;
             width: 100%;
             overflow: hidden;
             position: fixed;
             display: flex;
-            flex-direction: row;
+            align-items: center;
             justify-content: space-around;
-            margin:auto ;
-            margin-bottom: 100px;
+            border-bottom: 2px solid black;
         }
-        label{
+        nav .logo{
+            display: flex;
+            width: 100%; 
             color: white;
-            cursor: pointer;
-            font-size: 35px;
+            display: flex;
+            font-size: 26px;
+            justify-content: center;
         }
-        #burger{
-            display: none;
+        .logo a{
+            color: black;
         }
+        nav ul{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            width: 100%;
+        }
+        /*Estilizando os itens do menu*/
         nav ul li{
-            display: inline;
-            padding: 10px;
+            padding: 5px;
+            margin-left: 40px;
         }
         div nav ul li a{
-            color: white;
-            display: inline;
+            color: black;
+            display: flex;
+            justify-content: space-around;
             font-size: 26px;
+        }
+
+        /*destacar a main*/
+        main{
+            padding: 5px;
+        }
+        .container{
             margin-top: 100px;
-            margin-left: 10px;
-        }
-        input{
-            margin-top: 35px;
-            height: 25px;
-            border: 1px solid black;
-            border-radius: 5px;
-        }
-        .gamb{
-            height: 101px;
-        }
-        section{
-            width: 100%;
-            padding: 5px;
-        }
-        section div{
             background-color: white;
+            width: 60%;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px;
+        }
+        .product_img img{
+            padding: 5px;
             width: 500px;
-            display: flex;
-            padding: 50px;
+            margin-bottom: 0px;
         }
-        .container_produto{
-            justify-content: center;
-            width: 100%;
-            padding: 15px;
-        }
-        div img{
-            height: 600px;
-            width: 600px;
-        }
-        .info_produto{
-            display: inline-block;
-            margin-left: 5px;
-            padding: 0px;
-        }
-        .info_produto h1{
-            font-size: 32px;
-        }
-        .compra_produto{
-            margin-left: 0px;
-            padding: 0px;
-            margin-top: 10px;
-            font-size: 20px;
-            align-items: center;
-            display: flex;
-        }
-        /*Input de qtd*/
-        .qtd{
-            width: 50px;
-            height: 50px;
-            text-align: center;
-            font-size: 20px;
-            margin: 40px;
-        }
-        /*botao compar*/
-        .btn_comprar{
-            width: 100px;
-            height: 50px;
-            background-color: rgba(0, 0, 0, 0.664);
-            cursor: pointer;
-            color: whitesmoke;
-            border: 1px solid black;
-            border-radius: 5px;
-            font-size: 14px;
-            font-weight: bold;
-        }
-        /*Input de cep*/
-        .cep{
+        .fotos{
             margin-top: 0px;
-            padding: 5px;
-            width: 180px;
-            height: 50px;
-            font-size: 18px;
+            display: flex;
         }
-        /*botão calcular cep*/
-        .btn_cep{
-            width: 140px;
-            height: 50px;
-            background-color: rgba(0, 0, 0, 0.664);
-            cursor: pointer;
-            color: whitesmoke;
-            border: 1px solid black;
-            border-radius: 5px;
-            font-size: 14px;
+        .fotos div{
+            margin: 2px;
+            text-align: center;
+            margin-bottom: 50px;
+            border: 2px solid grey;
+
         }
-        .preco_produto{
-            font-size: 30px;
+        .fotos div img{
+            width: 70px;
+            margin-top: auto;
+            margin-bottom: auto;    
         }
-        .descricao{
+        /*Animação de mostrar imagem */
+        .fotos div img:hover{
+            background-color: red;
+        }
+
+
+
+
+
+        /*informação do produto, preço e input/btn*/
+        .product_info{
+            padding: 10px;
+        }
+        .product_info div h1{
+            margin-top: 10px;
+            margin-bottom: 0px;
             margin-left: 0px;
-            margin-left: 0px;
-            padding: 5px;
-            margin-top: 40px;
-            width: 100%;
-            display: grid;
         }
-        .descricao h1{
-            font-size: 24px;
+        .price h2{
+            margin-top: 15px;
         }
-        .descricao p{
-            font-size: 20px;
-            margin-top: 2px;
-            text-align: justify;
-            padding: 5px;
+        .qtd-btn{
+            display: flex;
         }
-        table{
+        .qtd-btn button{
+            border-radius: 2px;
+        }
+        .form-select{
+            width: 60%;
+            margin-right: 5px;
+        }
+        .description{
+            margin-top: 30px;
+        }
+
+        /*Tabela*/
+        table {
             margin-top: 50px;
             border: 1px solid black;
             width: 500px;
             height: 100px;
             table-layout: fixed;
             font-size: 20px;
+            caption-side: bottom;
+            border-collapse: collapse;
         }
-        table td{
-            border: 0px;
+        .accent{
+            background-color: #5f5f5f5f;
         }
-        .tr{
-            background-color: #ebebeb;
-        }
+
         .reviews_and_more{
             width: 100%;
             display: block;
@@ -183,6 +164,7 @@
             justify-content: center;
             align-items: center;
         }
+
         /*Avaliações*/
         .reviews{
             width: 55%;
@@ -192,6 +174,9 @@
             margin-left: auto;
             margin-right: auto;
         }
+        .reviews h1{
+            margin: 0px;
+        }
         .reviews section{
             width: 100%;
             display: flex;
@@ -199,29 +184,29 @@
             padding: 0px;
         }
         .nota{
-            margin: 5px;
+            margin: 0px;
             padding: 0px;
             display: block;
-            width: 25%;
         }
-        .nota .stars{
-            padding: 0px;
-            width: 100%;
-        }
-        .barra_progresso_stars{
-            padding: 0px;
-            margin: 5px;
-            display: block;
+        .nota-prod{
+            font-size: 100px;
+            margin: 0px;
         }
         .btn_review{ 
+            display: flex;
             width: 100%;
             padding: 0px;
             margin: 0px;
+            margin-top: 30px;
         }
         .btn_review button{
             width: 33.33%;
             height: 50px;
             font-size: 16px;
+            border-radius: 5px; 
+        }
+        .btn_review button:hover{
+            color: blue;
         }
         .reviews_list{
             width: 100%;
@@ -239,48 +224,92 @@
         .reviews_list .text_review p{
             margin-top: 5px;
         }
-        /*Produtos similares*/
-        .produtos_similares{
-            width: 50%;
-            margin-left: 0px;
-            display: block;
-            padding: 0px;
+
+        /*Produtos*/
+        section{
             margin-left: auto;
             margin-right: auto;
+            width: 80%;
+            padding: 5px;
+            margin-top: 20px;
         }
-        .produtos_similares h1{
-            width: 100%;
+
+        section h1{
+            margin-left: 10%;
         }
+
+        /*Container de produtos */
         .produtos{
-            padding: 0px;
-        }
-        .produto img{
-            width: 224px;
-            height: 224px;
-            cursor: pointer;
-        }
-        .produto{
-            background-color: gray;
             display: flex;
-            flex-wrap: wrap;
-            margin-left: 10px;
-            padding: 2px;
-        }
-        .div_info_produto{
-            display: flex;
-            align-items: center;
-            justify-content: center;
             text-align: center;
             flex-wrap: wrap;
-            background-color: rebeccapurple;
-            width: 224px;
-            padding: 0px;
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        /*Produto*/
+        .produto{
+            height: 100%;
+            background-color: whitesmoke;
+            margin: 5px;
+            cursor: pointer;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            box-shadow: 2px 5px 5px black;
+        }
+        .produto:hover{
+            transform: scale(1.05);
+            transition: 1.8;
+        }
+        /*image for product */
+        .produto img{
+            margin-top: 10px;
+            width: 140px;
+            cursor: pointer;
+            padding: 5px
+        }
+
+        .info_produto{
+            text-align: left;
+        }
+
+        /*name*/
+        .info_produto h3, .info_produto span{
+            padding: 5px;
+        }
+
+        /*nome do produto*/
+        .info_produto h3{
+            font-size: 18px;
+        }
+        /*preço do produto*/
+        .info_produto span{
+            font-size: 20px;
+
+        }
+        /*Botão comprar*/
+        .btn_comprar{
+            cursor: pointer;
+            width: 90%;
+            height: 40px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: gray;
+            border: 1px solid black;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        .btn_comprar a{
+            color: whitesmoke;
         }
 
         /*Rodapé*/
         footer{
-            background-color: black;
-            color: white;
+            background-color: rgba(172, 159, 159, 0.322);
+            color: black;
             height: 200px;
             width: 100%;
             overflow: hidden;
@@ -290,6 +319,8 @@
             padding: 30px;
             align-items: center;
             margin-bottom: 0px;
+            bottom: 0px;
+            text-align: center;
         }
         footer div{
             display: inline-block;
@@ -298,109 +329,234 @@
         footer div div span{
             cursor: pointer;
             font-size: 18px;
+            margin: 5px;
+        }
+        footer h1{
+            font-weight: normal;
+            margin-bottom: 10px;
         }
         footer div span i{
             font-size: 30px;
             margin: 5px;
             cursor: pointer;
         }
-        @media(max-width: 1352px){
-            .descricao{
-                width: 500px;
+
+
+
+        /*Responsividade*/  
+        @media (max-width: 1400px) {
+            .container{
+                width: 80%;
             }
+        }
+
+        @media (max-width: 1150px){
+            footer{
+                display: flex;
+                flex-wrap: wrap;
+                height: 100%;
+                text-align: left;
+            }
+            footer div{
+                display: inline-block;
+                margin-top: 20px;
+                margin-left: auto;
+            }
+            footer div div{
+                margin: 10px;
+            }
+            .redes_sociais{
+                margin-right: auto;
+                margin-left: 0px;
+            }
+        }
+
+        @media (max-width: 1140px) {
+            /*alinhar imagem ao meio*/
+            .container{
+                display: block;
+                width: 100%;
+                margin-top: 70px;
+            }
+            .product_img{
+                text-align: center;
+            }
+            .fotos{
+                justify-content: center;
+            }
+            table{
+                width: 100%;
+            }
+        }
+
+
+
+        @media (max-width:700px){
+            main{
+                width: 90%;
+                padding: 3px;
+            }
+            nav{
+                height: 80px;
+                font-size: 100px;
+
+            }
+            nav .logo{
+                display: flex;
+                width: 70%;
+            }
+            .logo li a {
+                font-size: 100%;
+            }
+            nav ul li{
+                padding: 2px;
+                margin-left: 10px;
+                font-size: 14px;
+                color: white;
+
+            }
+            div nav ul li a{
+                font-size: 150%;
+            }
+            .reviews{
+                width: 100%;
+            }   
+
+        }
+
+        @media (max-width: 580px){
+            .product_img img{
+            width: 60%;
+        }
         }
     </style>
 </head>
 <body>
-    <div>
-        <nav>
-            <ul>
-                <li>
-                    <input type="checkbox" id="burger">
-                    <label for="burger">
-                        ☰
-                    </label>
-                </li>
 
-                <li><a href="index.html">Cerrapan</a></li>
-                <li><input type="text" placeholder="O que vocẽ proucura?"></li>
+    <!--Criando o menu (nav) dentro de uma dv-->
+    <div class="container_nav">
+        <nav>
+            <div class="logo">
+                <li><a href="index.html">Pantace</a></li>
+            </div>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li class="mais-informacoes"><a href="#rodape">Contato</a></li>
                 <li><a href="login/login.html"><i class="fi fi-rr-user"></i></a></li>
                 <li><a href="cart.html"><i class="fi fi-rr-shopping-cart"></i></a></li>
-                <li class="mais-informacoes"><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </div>
+
     <div class="gamb">
     </div>
-    <section>
-        <div class="container_produto">
-            <img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt="">
+    
 
-            <!--Div para informações do produto-->
-            <div class="info_produto">
-                <h1>Whisky Jack Daniels</h1>
-                <div class="compra_produto">   
-                    <span>⭐</span>
-                    <span>⭐</span>   
-                    <span>⭐</span>   
-                    <span>⭐</span>
+    <main>
+        <section class="container">
+            <div class="product_img">
+                <img src="assets/img/products/drink-1/3.jpeg" alt="">
+                <div class="fotos">
+                    <div>
+                        <img src="assets/img/products/drink-1/1.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/products/drink-1/2.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/products/drink-1/3.jpeg" alt="">
+                    </div>
                 </div>
-                <div class="compra_produto"> 
-                    <span class="preco_produto">R$ 99,90</span>
+            </div>
+
+            <div class="product_info">
+                <div><h1>Produto exemplo</h1></div>
+
+                <!--_________Estrelas_________-->
+                <div>
+                    <span>
+                        <img src="https://img.icons8.com/fluency/48/000000/star.png" width="20x"/>
+                    </span>
+                    <span>
+                        <img src="https://img.icons8.com/fluency/48/000000/star.png" width="20x"/>
+                    </span>
+                    <span>
+                        <img src="https://img.icons8.com/fluency/48/000000/star.png" width="20x"/>
+                    </span>
+                    <span>
+                        <img src="https://img.icons8.com/fluency/48/000000/star.png" width="20x"/>
+                    </span>
+                    <span>
+                        <img src="https://img.icons8.com/fluency/48/000000/star-half-empty.png" width="20px"/>
+                    </span>
                 </div>
-                <div class="compra_produto">
-                    <input type="number" name="" id="" placeholder="qtd" min="1" max="100" class="qtd">
-                    <button class="btn_comprar"> COMPRAR</button>
+
+                <!--_________Preço_________-->
+                <div class="price"><h2>R$10,00</h2></div>
+
+                <!--_________Qtd e Btn Comprar_________-->
+                <div class="qtd-btn">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Selecione a Quantidade</option>
+                        <option value="1">1 Kg</option>
+                        <option value="2">2 Kg</option>
+                        <option value="3">3 Kg</option>
+                      </select>
+
+                    <button><i class="fi fi-rr-shopping-cart-add"></i> Comprar</button>
                 </div>
-                <div class="compra_produto">
-                <span><input type="text" name="" id="" placeholder="digite seu cep" class="cep"> <button class="btn_cep">CALCULAR FRETE</button></span>
-                </div>
-                <div class="descricao">
-                    <h1>Descrição</h1>
+                
+                <!--_________Descrição_________-->
+                <div class="description">
+                    <h2>Descrição</h2>
                     <p>
-                        &nbsp O Jack Daniel's Tennessee Whiskey é feito com o melhor milho, centeio e malte de cevada. Seu caráter diferenciado é o resultado da fermentação natural, da cuidadosa destilação e do uso da água livre de ferro da Destilaria que nasce na Cave Spring e corre à uma temperatura constante de 13°C    
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, laudantium nulla quos quam illo perspiciatis culpa aliquid iusto ducimus dolore facere deserunt quaerat! Dolores voluptates, fuga maxime illum magni consequatur!
                     </p>
                 </div>
-                <br>
-                <table border="4">
-                    <tr>
-                        <td>Volume</td>
-                        <td>1000 ml</td>
-                    </tr>
-                    <tr class="tr">
-                        <td>Garrafa</td>
-                        <td>Vidro</td>
-                    </tr>
-                    <tr>
-                        <td>Concentração de Alcool </td>
-                        <td>40%</td>
-                    </tr>
-                    <tr class="tr">
-                        <td>Importado</td>
-                        <td>Sim</td>
-                    </tr>
-                </table>
+
+                <!--_________Tabela sobre informações_________-->
+                <div>
+                    <table border="4">
+                        <tr>
+                            <td>Tipo</td>
+                            <td> Zero Kcal</td>
+                        </tr>
+                        <tr class="accent">
+                            <td>Volume</td>
+                            <td>100ml</td>
+                        </tr>
+                        <tr>
+                            <td>Alcool</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr class="accent">
+                            <td>Validade</td>
+                            <td>120 dias/td>
+                        </tr>
+                    </table>
+                    <br>
+                </div>
             </div>
-        </div>
+        </section>
+
+
         <div class="reviews_and_more">
             <div class="reviews">
                 <h1>Avaliações</h1>
                 <section>
                     <div class="nota">
-                        <span>4.5</span>
+                        <span class="nota-prod">4.5</span>
                         <div class="stars">   
-                            <span>⭐</span>
-                            <span>⭐</span>   
-                            <span>⭐</span>   
-                            <span>⭐</span>
+                            <span><img src="https://img.icons8.com/fluency/48/000000/star.png" width="40x"/></span>
+                            <span><img src="https://img.icons8.com/fluency/48/000000/star.png" width="40x"/></span>   
+                            <span><img src="https://img.icons8.com/fluency/48/000000/star.png" width="40x"/></span>   
+                            <span><img src="https://img.icons8.com/fluency/48/000000/star.png" width="40x"/></span>
+                            <span><img src="https://img.icons8.com/fluency/48/000000/star-half-empty.png" width="40px"/></span>
                         </div>
                     </div>
                     <div class="barra_progresso_stars">
-                        <span>Barra de progesso 1</span><br>
-                        <span>Barra de progesso 2</span><br>
-                        <span>Barra de progesso 3</span><br>
-                        <span>Barra de progesso 4</span><br>
-                        <span>Barra de progesso 5</span>
+
+
                     </div>
                 </section>
                 <div class="btn_review">
@@ -410,10 +566,10 @@
                 </div>
                 <div class="reviews_list">
                     <div class="stars_review">
-                        <span>⭐</span>
-                        <span>⭐</span>   
-                        <span>⭐</span>   
-                        <span>⭐</span>
+                        <span><img src="https://img.icons8.com/fluency/48/000000/star.png" width="20x"/></span>
+                        <span><img src="https://img.icons8.com/fluency/48/000000/star.png" width="20x"/></span>   
+                        <span><img src="https://img.icons8.com/fluency/48/000000/star.png" width="20x"/></span>   
+                        <span><img src="https://img.icons8.com/fluency/48/000000/star.png" width="20x"/></span>
                     </div>
                     <div class="text_review">
                         <h4>Bom</h4>
@@ -421,36 +577,52 @@
                     </div>
                 </div>
             </div>
-            <div class="produtos_similares">
-                <h1>Produtos similares</h1>
-                <div class="produtos">    <!--div para todos os produtos(formada por várias Divs da classe produto)-->
-                    <div class="produto"> <!--div para cada produto-->
-                        <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
-                        <div class="div_info_produto">
-                            <h3>Whisky Jack Daniels</h3>
-                            <span>R$99,90</span> 
-                        </div>
-                    </div>
-                    <div class="produto"> <!--div para cada produto-->
-                        <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
-                        <div class="div_info_produto">
-                            <h3>Whisky Jack Daniels</h3>
-                            <span>R$99,90</span>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="produto"> <!--div para cada produto-->
-                        <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
-                        <div class="div_info_produto">
-                            <h3>Whisky Jack Daniels</h3>
-                            <span>R$99,90</span>
-                            <br>
-                        </div>
+        </div>
+
+        <!--área dos produtos-->
+        <section>
+            <div>
+                <h1>Produtos Semelhantes</h1>
+            </div>
+            <div class="produtos" id="produtos">    <!--div para todos os produtos(formada por várias Divs da classe produto)-->
+    
+                <div class="produto"> <!--div para cada produto-->
+                    <a href="produto.html"><img src="assets/img/products/drink-1/3.jpeg" alt=""></a>
+                    <div class="info_produto">
+                        <h3>Bebida 1</h3>
+                        <span> <strong>R$29,90</strong></span>
+                        <br>
+                        <button class="btn_comprar"><a href="produto.html">Comprar</a></button>
                     </div>
                 </div>
+    
+                <div class="produto"> <!--div para cada produto-->
+                    <a href="produto.html"><img src="assets/img/products/drink-3/1.jpeg" alt=""></a>
+                    <div class="info_produto">
+                        <h3>Bebida 2</h3>
+                        <span> <strong>R$19,90</strong></span>
+                        <br>
+                        <button class="btn_comprar"><a href="produto.html">Comprar</a></button>
+                    </div>
+                </div>
+
+                <div class="produto"> <!--div para cada produto-->
+                    <a href="produto.html"><img src="assets/img/products/drink-3/1.jpeg" alt=""></a>
+                    <div class="info_produto">
+                        <h3>Bebida 2</h3>
+                        <span> <strong>R$19,90</strong></span>
+                        <br>
+                        <button class="btn_comprar"><a href="produto.html">Comprar</a></button>
+                    </div>
+                </div>
+                
             </div>
-        </div>
-    </section>
+        </section>
+
+    </main>
+
+
+    <!--Rodapé-->
     <footer>
         <div>
             <div>

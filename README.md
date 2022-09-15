@@ -1,3 +1,2 @@
-# drink-site
+# pantace
  
-https://jhe4n.github.io/drink-site/index.html

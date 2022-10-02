@@ -15,25 +15,22 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'> <!--Twitter-->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'> <!--Whatsapp-->
 
-    <title>CERRAPAN DRINKS</title>
+    <title>PANTACE DRINKS</title>
+
 </head>
 <body>
+    
     <!--Criando o menu (nav) dentro de uma dv-->
-    <div>
+    <div class="container_nav">
         <nav>
+            <div class="logo">
+                <li><a href="index.html">Pantace</a></li>
+            </div>
             <ul>
-                <li>
-                    <input type="checkbox" id="burger">
-                    <label for="burger">
-                        ☰
-                    </label>
-                </li>
-
-                <li><a href="index.html">Cerrapan</a></li>
-                <li><input type="text" placeholder="O que vocẽ proucura?"></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li class="mais-informacoes"><a href="#rodape">Contato</a></li>
                 <li><a href="login/login.html"><i class="fi fi-rr-user"></i></a></li>
                 <li><a href="cart.html"><i class="fi fi-rr-shopping-cart"></i></a></li>
-                <li class="mais-informacoes"><a href="#rodape">Contato</a></li>
             </ul>
         </nav>
     </div>
@@ -41,127 +38,105 @@
     <!--Gambiarra pro conteudo do site ficar depois do menu(e não atrás)-->
     <div class="gamb">
     </div>
-
-    <!--Section para o conteúdo da página e uma div para a parte 'quem somos'-->
-    <section>
-        <!--Div para filtrar produtos (Não sei ao certo a posição dela ainda, se fica em cima, na direita ou na esquerda, ou igual do Mercado Livre)-->
-        <div class="filtrar_produtos">
-            <select name="" id="">
-                <option value="">Mais vendidos</option>
-                <option value="">Mais Avaliados</option>
-                <option value="">Ordenar A-Z</option>
-                <option value="">Ordenar Z-A</option>
-                <option value="">Preço crescente</option>
-                <option value="">Preço decrescente</option>
-            </select> 
-            <select name="" id="">
-                <option value="">1000 ml</option>
-                <option value="">500 ml</option>
-                <option value="">250 ml</option>
-            </select> 
-            <select name="" id="">
-                <option value="">Drink</option>
-                <option value="">Wisky</option>
-                <option value="">Gim</option>
-                <option value="">Sem Alcool</option>
-            </select> 
+    <div class="img_fundo">
+        <div>
+            <span>PANTACE</span>
+            <br>
+            <p id="sobre"> Bebidas do cerrado e do pantanal</p>
         </div>
-        <!--área dos produtos-->
-        <div class="produtos">    <!--div para todos os produtos(formada por várias Divs da classe produto)-->
-            <div class="produto"> <!--div para cada produto-->
-                <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
-                <div>
-                    <h3>Wisky Jack Daniels</h3>
-                    <span>R$99,90</span>
-                    <br>
-                    <button><a href="produto.html">Comprar</a></button>
-                </div>
-            </div>
-            <div class="produto"> <!--div para cada produto-->
-                <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
-                <div>
-                    <h3>Wisky Jack Daniels</h3>
-                    <span>R$99,90</span>
-                    <br>
-                    <button><a href="produto.html">Comprar</a></button>
-                </div>
-            </div>
-            <div class="produto"> <!--div para cada produto-->
-                <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
-                <div>
-                    <h3>Wisky Jack Daniels</h3>
-                    <span>R$99,90</span>
-                    <br>
-                    <button><a href="produto.html">Comprar</a></button>
-                </div>
-            </div>
-            <div class="produto"> <!--div para cada produto-->
-                <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
-                <div>
-                    <h3>Wisky Jack Daniels</h3>
-                    <span>R$99,90</span>
-                    <br>
-                    <button><a href="produto.html">Comprar</a></button>
-                </div>
-            </div>
-            <div class="produto"> <!--div para cada produto-->
-                <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
-                <div>
-                    <h3>Wisky Jack Daniels</h3>
-                    <span>R$99,90</span>
-                    <br>
-                    <button><a href="produto.html">Comprar</a></button>
-                </div>
-            </div>
-            <div class="produto"> <!--div para cada produto-->
-                <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
-                <div>
-                    <h3>Wisky Jack Daniels</h3>
-                    <span>R$99,90</span>
-                    <br>
-                    <button><a href="produto.html">Comprar</a></button>
-                </div>
-            </div>
-            <div class="produto"> <!--div para cada produto-->
-                <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
-                <div>
-                    <h3>Wisky Jack Daniels</h3>
-                    <span>R$99,90</span>
-                    <br>
-                    <button><a href="produto.html">Comprar</a></button>
-                </div>
-            </div>
-            <div class="produto"> <!--div para cada produto-->
-                <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
-                <div>
-                    <h3>Wisky Jack Daniels</h3>
-                    <span>R$99,90</span>
-                    <br>
-                    <button><a href="produto.html">Comprar</a></button>
-                </div>
-            </div>
-            <div class="produto"> <!--div para cada produto-->
-                <a href="produto.html"><img src="https://tb1821.vteximg.com.br/arquivos/ids/218751-1000-1000/Whisky-Jack-Daniels-C-Cart-1-Lt.jpg?v=637808721855530000" alt=""></a>
-                <div>
-                    <h3>Wisky Jack Daniels</h3>
-                    <span>R$99,90</span>
-                    <br>
-                    <button><a href="produto.html">Comprar</a></button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Div para a parte 'quem somos'-->
-    <div id="quem_somos">
-        <h1>Quem Somos?</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis modi ab reiciendis assumenda eveniet fuga earum eaque accusantium cupiditate laboriosam, fugiat nulla perferendis voluptatem! Tempora excepturi atque delectus commodi aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam fugiat tenetur maxime pariatur odit ipsam dolore quae rem consectetur ab amet laboriosam blanditiis natus nemo at consequuntur, inventore minus repellendus.</p>
     </div>
+    <main>
+        <!--Quem somos-->
+        <div class="container">
+            <div class="container_clild">
+                <h1>Quem Somos?</h1>
+                <p>Nós somos uma Startup da área de bebidas, produzimos nossos próprios produtos e enviamos para todo o Brasil! O nosso maior compromisso é o bem estar e a satisfação de você cliente!
+                 <br> &nbsp Conheça um pouco mais sobre nossos produtos no botão abaixo!</p>
+                <a href="#linha_produtos"><button>Produtos</button></a>
+            </div>
+            <img src="assets/img/compras-online.png" alt="" class="img_container">
+        </div>
 
+        <!--Linha de Produtos-->
+        <div class="container" id="linha_produtos">
+            <img src="assets/img/bebida.png" alt="" class="img_container" id='primary_img_line_prodcuct'>
+            <div class="container_clild">
+                <h1>Linha de produtos</h1>
+                <p>Nossas bebidas são feitas 100% artesanalmente,visando sempre a qualidade acima de tudo, ah e vale lembrar que alguns dos produtos são feitos com frutos do cerrado ou do pantanal!</p>
+                <img src="assets/img/bebida.png" alt="" class="secundary_img_line_product">
+            </div>
+        </div>
+
+
+
+        <!--área dos produtos-->
+        <section>
+            <div>
+                <h1>Produtos</h1>
+            </div>
+            <div class="produtos" id="produtos">    <!--div para todos os produtos(formada por várias Divs da classe produto)-->
+    
+                <div class="produto"> <!--div para cada produto-->
+                    <a href="produto.html"><img src="assets/img/products/drink-1/3.jpeg" alt=""></a>
+                    <div class="info_produto">
+                        <h3>Bebida 1</h3>
+                        <span> <strong>R$29,90</strong></span>
+                        <br>
+                        <button class="btn_comprar"><a href="produto.html">Comprar</a></button>
+                    </div>
+                </div>
+    
+                <div class="produto"> <!--div para cada produto-->
+                    <a href="produto.html"><img src="assets/img/products/drink-2/3.jpeg" alt=""></a>
+                    <div class="info_produto">
+                        <h3>Bebida 2</h3>
+                        <span> <strong>R$29,90</strong></span>
+                        <br>
+                        <button class="btn_comprar"><a href="produto.html">Comprar</a></button>
+                    </div>
+                </div>
+    
+                <div class="produto"> <!--div para cada produto-->
+                    <a href="produto.html"><img src="assets/img/products/drink-3/1.jpeg" alt=""></a>
+                    <div class="info_produto">
+                        <h3>Bebida 2</h3>
+                        <span> <strong>R$19,90</strong></span>
+                        <br>
+                        <button class="btn_comprar"><a href="produto.html">Comprar</a></button>
+                    </div>
+                </div>
+                
+                <div class="produto"> <!--div para cada produto-->
+                    <a href="produto.html"><img src="assets/img/products/drink-4/3.jpeg" alt=""></a>
+                    <div class="info_produto">
+                        <h3>Bebida 3</h3>
+                        <span> <strong>R$29,90</strong></span>
+                        <br>
+                        <button class="btn_comprar"><a href="produto.html">Comprar</a></button>
+                    </div>
+                </div>
+    
+                <div class="produto"> <!--div para cada produto-->
+                    <a href="produto.html"><img src="assets/img/products/drink-5/3.jpeg" alt=""></a>
+                    <div class="info_produto">
+                        <h3>Bebida 4</h3>
+                        <span> <strong>R$29,90</strong></span>
+                        <br>
+                        <button class="btn_comprar"><a href="produto.html">Comprar</a></button>
+                    </div>
+                </div>
+        
+    
+            </div>
+
+        </section>
+    </main>
+        
         <!--Rodapé(informações de contato, endereço, redes sociais)-->
         <footer id="rodape">
             <div>
                 <div>
-                    <h1>Fale conosco</h1>
+                    <h1>Contato</h1>
                     <span>suporte@email.com</span> 
                     <br>
                     <span>(67)9999-9999</span>
@@ -172,8 +147,14 @@
                     <br>
                     <span>Política de privacidade</span>
                 </div>
+                <div>
+                    <h1>Endereço</h1>
+                    <span>Rua Projetada B - Dourados MS</span>
+                    <br>
+                    <span>Nome do bairro</span>
+                </div>
             </div>
-            <div>
+            <div class="redes_sociais">
                 <span><i class="fi fi-brands-facebook"></i></span>
                 <span><i class="fi fi-brands-instagram"></i></span>
                 <span><i class="fi fi-brands-twitter"></i></span>

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login-Cerrapan</title>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+
     <style>
         *{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -69,9 +72,18 @@
     </div>    
     <div>
         <form action="">
-            <h1>Recuperar senha</h1>
-            <p>Enviaremos um email com o link para que vocẽ possa atualizar sua senha</p>
-            <span>Email <input type="text"></span>
+            <div>
+                <h1> <strong>Recuperar senha</strong></h1>
+                <p>Enviaremos um email com o link para que vocẽ possa atualizar sua senha</p>
+            </div>
+    
+                        
+            <!--Input de Email-->
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Email</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu email">
+            </div>
+
             <button>Enviar Email</button>
         </form>
     </div>
